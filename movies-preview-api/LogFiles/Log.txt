@@ -266,3 +266,4 @@
 [2022-12-05T20:28:56] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
 [2022-12-05T20:56:12] [Process]- this is junk data
 [2022-12-05T20:56:16] [Process]- this is junk data
+[2022-12-05T23:11:59] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
