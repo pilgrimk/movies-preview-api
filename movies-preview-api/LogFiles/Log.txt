@@ -1,0 +1,268 @@
+[2022-11-23T16:16:16] [Process]- this is junk data
+[2022-11-23T16:41:29] [Process]- Retrieving log file data via Get request
+[2022-11-24T15:46:59] [Error]- Error Msg: The remote server returned an error: (404) Not Found., Method: GET, URL: https://api.themoviedb.org/discover/movie?primary_release_date.gte=2022-11-24&primary_release_date.lte=2023-05-24&api_key=4c3a1f537f8907422488da3c434f96b2 Payload: 
+[2022-11-24T15:47:40] [Error]- Error Msg: The remote server returned an error: (404) Not Found., Method: GET, URL: https://api.themoviedb.org/discover/movie?primary_release_date.gte=2022-11-24&primary_release_date.lte=2023-05-24&api_key=4c3a1f537f8907422488da3c434f96b2 Payload: 
+[2022-11-24T15:48:37] [Error]- Error Msg: The remote server returned an error: (404) Not Found., Method: GET, URL: https://api.themoviedb.org/discover/movie?primary_release_date.gte=2022-11-24&primary_release_date.lte=2023-05-24&api_key=4c3a1f537f8907422488da3c434f96b2 Payload: 
+[2022-11-24T15:54:14] [Error]- Error Msg: The remote server returned an error: (404) Not Found., Method: GET, URL: https://api.themoviedb.org/discover/movie?primary_release_date.gte=2022-11-24&primary_release_date.lte=2023-05-24&api_key=4c3a1f537f8907422488da3c434f96b2 Payload: 
+[2022-11-24T16:20:29] [Error]- Error Msg: No such host is known. No such host is known., Method: GET, URL: https://api.themoviedb.org3/movie/upcoming?api_key=4c3a1f537f8907422488da3c434f96b2&language=en-US&page=1 Payload: 
+[2022-11-24T17:48:34] [Process]- GetUpcomingMovies, processed 5 of 71 total pages
+[2022-11-24T17:51:52] [Process]- GetUpcomingMovies, processed 5 of 71 total pages
+[2022-11-24T17:52:42] [Process]- GetUpcomingMovies, processed 5 of 71 total pages
+[2022-11-24T17:53:19] [Process]- GetUpcomingMovies, processed 10 of 71 total pages
+[2022-11-24T18:01:34] [Process]- GetUpcomingMovies, processed 10 of 71 total pages
+[2022-11-24T18:02:47] [Process]- GetUpcomingMovies, processed 10 of 71 total pages
+[2022-11-24T18:03:41] [Process]- GetUpcomingMovies, processed 10 of 71 total pages
+[2022-11-24T18:04:07] [Process]- GetUpcomingMovies, processed 10 of 71 total pages
+[2022-11-25T13:40:05] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T13:54:02] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T13:58:56] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T13:58:56] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T13:59:35] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T13:59:36] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:00:55] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:00:56] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:14:03] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:14:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:14:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:15:12] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:15:30] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:15] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:16] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:16] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:47] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:47] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:48] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:48] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:49] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:50] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:50] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:51] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:51] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:52] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:52] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:53] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:53] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:54] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:54] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:55] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:55] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:57] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:58] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:58] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:59] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:22:59] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:00] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:00] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:01] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:01] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:02] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:03] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:03] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:04] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:04] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:05] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:05] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:05] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:06] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:23:13] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=2 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=2 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=2 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation was canceled., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=2 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation was canceled., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=2 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:14] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:15] [Error]- Error Msg: The operation was canceled., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:16] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Error]- Error Msg: The operation has timed out., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2022-11-25&primary_release_date.lte=2023-02-25&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:17] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:18] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:20] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:27:20] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:28:04] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:28:04] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:28:49] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:28:57] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:28:58] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:29:33] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:29:34] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:30:09] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:30:29] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:30:29] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:30:50] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:30:50] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:31:44] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:31:44] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:34:32] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:35:26] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:35:26] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:35:42] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:35:42] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:36:21] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:36:37] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:36:49] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:36:49] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:36:51] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:36:52] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:37:44] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:37:45] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:38:32] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:38:52] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:38:52] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:39:14] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:39:14] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:39:56] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T14:40:20] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:04:13] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:24:54] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:26:34] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:30:04] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:30:09] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:30:10] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:30:34] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:43:39] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:45:29] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:45:51] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-11-25T15:45:51] [Process]- GetUpcomingMovies, processed 3 of 69 total pages
+[2022-12-05T18:07:27] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:07:27] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:09:28] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:10:46] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:11:01] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:11:01] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:12:00] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:15:12] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:15:26] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:15:27] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:16:49] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T18:25:18] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:13:34] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:14:38] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:16:31] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:19:13] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:24:41] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:26:31] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:28:20] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:29:00] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:29:58] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:44:38] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:45:05] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:46:38] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:48:22] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:48:31] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:48:31] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:50:11] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:50:20] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:50:20] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:50:47] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:51:11] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:52:28] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:53:19] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:53:32] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:53:46] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:53:57] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:54:17] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:54:40] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:54:52] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:55:03] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:55:33] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:57:10] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:57:20] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:57:47] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:58:31] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T19:59:22] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:00:33] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:01:24] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:02:27] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:10:33] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:12:37] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:13:48] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:15:52] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:17:02] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:17:43] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:18:04] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:18:31] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:19:54] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:20:32] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:21:06] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:28:56] [Process]- GetUpcomingMovies, processed 3 of 54 total pages
+[2022-12-05T20:56:12] [Process]- this is junk data
+[2022-12-05T20:56:16] [Process]- this is junk data
