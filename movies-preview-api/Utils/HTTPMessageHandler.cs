@@ -3,6 +3,8 @@ using System.Text;
 using Microsoft.VisualBasic;
 using System.Net;
 using System.Xml.Serialization;
+using System.Net.Http;
+using System.IO;
 
 namespace movies_preview_api.Utils
 {
@@ -27,7 +29,8 @@ namespace movies_preview_api.Utils
 
         public string SendHTTPMesssage(string url, string method, string postdata = "", WebHeaderCollection headers = null)
         {
-            HttpWebRequest request;
+            HttpRequestMessage request;
+            System.Net.Http.HttpMethod request_method =  System.Net.Http.HttpMethod.Get;
             string responseMessage = null;
             UTF8Encoding enc;
             byte[] postdatabytes = null;
@@ -40,16 +43,31 @@ namespace movies_preview_api.Utils
                     postdatabytes = enc.GetBytes(postdata);
                 }
 
-                request = (System.Net.HttpWebRequest)System.Net.WebRequest.Create(url);
+                request = new HttpRequestMessage(HttpMethod.Get, url);
 
                 switch (method)
                 {
                     case GET_REQUEST_METHOD:
+                        {
+                            request.Method = System.Net.Http.HttpMethod.Get;
+                            break;
+                        }
+
                     case POST_REQUEST_METHOD:
+                        {
+                            request.Method = System.Net.Http.HttpMethod.Post;
+                            break;
+                        }   
+
                     case PUT_REQUEST_METHOD:
+                        {
+                            request.Method = System.Net.Http.HttpMethod.Put;
+                            break;
+                        }
+
                     case DELETE_REQUEST_METHOD:
                         {
-                            request.Method = method;
+                            request.Method = System.Net.Http.HttpMethod.Delete;
                             break;
                         }
 
@@ -60,30 +78,24 @@ namespace movies_preview_api.Utils
                 }
 
                 if (Information.IsNothing(headers))
-                    headers = new WebHeaderCollection();
+                    headers = [];
 
                 if (Information.IsNothing(headers.Get(HEADER_CONTENT_TYPE)))
                     headers.Add(HEADER_CONTENT_TYPE, FORM_URLENCODED);
                 if (Information.IsNothing(headers.Get(HEADER_TIMEOUT)))
                     headers.Add(HEADER_TIMEOUT, TIMEOUT.ToString());
+                if ((!Information.IsNothing(postdatabytes)) && 
+                    (Information.IsNothing(headers.Get(HEADER_CONTENT_LENGTH))))
+                    headers.Add(HEADER_CONTENT_LENGTH, postdatabytes.Length.ToString());
 
-                SetWebRequestHeaders(ref request, headers);
+                var httpClient = new HttpClient();
+                request = new HttpRequestMessage(request_method, url);
+                SetHttpClientHeaders(ref httpClient, headers);
 
-                if ((!Information.IsNothing(postdatabytes)))
-                {
-                    if (Information.IsNothing(headers.Get(HEADER_CONTENT_LENGTH)))
-                        headers.Add(HEADER_CONTENT_LENGTH, postdatabytes.Length.ToString());
-
-                    System.IO.Stream dataStream = request.GetRequestStream();
-                    dataStream.Write(postdatabytes, 0, postdatabytes.Length);
-                    dataStream.Close();
-                }
-
-                using (var response = (System.Net.HttpWebResponse)request.GetResponse())
-                {
-                    var reader = new System.IO.StreamReader(response.GetResponseStream());
-                    responseMessage = reader.ReadToEnd();
-                }
+                var response = httpClient.Send(request);
+                var reader = new StreamReader(response.Content.ReadAsStream());
+                responseMessage = reader.ReadToEnd();
+                reader.Close();
 
                 return responseMessage;
             }
@@ -95,7 +107,7 @@ namespace movies_preview_api.Utils
             }
         }
 
-        private void SetWebRequestHeaders(ref HttpWebRequest request, WebHeaderCollection headers)
+        private void SetHttpClientHeaders(ref HttpClient client, WebHeaderCollection headers)
         {
             try
             {
@@ -105,31 +117,35 @@ namespace movies_preview_api.Utils
                     {
                         case HEADER_CONTENT_TYPE:
                             {
-                                request.ContentType = headers.Get(key);
+                                //request.ContentType = headers.Get(key);
+                                client.DefaultRequestHeaders.TryAddWithoutValidation(key, headers.Get(key));
                                 break;
                             }
 
                         case HEADER_CONTENT_LENGTH:
                             {
-                                request.ContentLength = System.Convert.ToInt64(headers.Get(key));
+                                //request.ContentLength = System.Convert.ToInt64(headers.Get(key));
+                                client.DefaultRequestHeaders.TryAddWithoutValidation(key, Convert.ToString(Convert.ToInt64(headers.Get(key))));
                                 break;
                             }
 
                         case HEADER_TIMEOUT:
                             {
-                                request.Timeout = System.Convert.ToInt32(headers.Get(key));
+                                //request.Timeout = System.Convert.ToInt32(headers.Get(key));
+                                client.DefaultRequestHeaders.TryAddWithoutValidation(key, Convert.ToString(Convert.ToInt32(headers.Get(key))));
                                 break;
                             }
 
                         case HEADER_AUTHORIZATION:
                             {
-                                request.Headers.Add(HEADER_AUTHORIZATION, headers.Get(key));
+                                //request.Headers.Add(HEADER_AUTHORIZATION, headers.Get(key));
+                                client.DefaultRequestHeaders.TryAddWithoutValidation(key, headers.Get(key));
                                 break;
                             }
 
                         case HEADER_AUTHTOKEN:
                             {
-                                request.Headers.Add(HEADER_AUTHTOKEN, headers.Get(key));
+                                client.DefaultRequestHeaders.TryAddWithoutValidation(key, headers.Get(key));
                                 break;
                             }
 
@@ -142,7 +158,7 @@ namespace movies_preview_api.Utils
             }
             catch (Exception ex)
             {
-                throw new Exception("HTTPMessageHandler.SetWebRequestHeaders: " + ex.Message);
+                throw new Exception("HTTPMessageHandler.SetHttpClientHeaders: " + ex.Message);
             }
         }
 
