@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using movies_preview_api.Models;
+using movies_preview_api.Utils;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,14 +10,7 @@ namespace movies_preview_api.Controllers
     [ApiController]
     public class LogFileController : ControllerBase
     {
-        private readonly Utils.Logger myLogger = new Utils.Logger();
-
-        [Route("Test")]
-        [HttpGet]
-        public JsonResult Test()
-        {
-            return new JsonResult("Test");
-        }
+        private static readonly Logger logger = new();
 
         // GET: api/<LogFileController>
         [HttpGet]
@@ -28,15 +18,16 @@ namespace movies_preview_api.Controllers
         {
             try
             {
-                myLogger.WriteToLog("Retrieving log file data via Get request", Utils.Logger.LogMessageType.PROCESS);
+                logger.WriteToLog("Retrieving log file data via Get request", Utils.Logger.LogMessageType.PROCESS);
 
-                string[] result = myLogger.GetLogFile();
+                string[] result = logger.GetLogFile();
                 return new JsonResult(result);
             }
             catch (Exception ex)
             {
-                WriteToLogFile("LogFile Get, Error: " + ex.Message, Utils.Logger.LogMessageType.ERROR);
-                return new JsonResult("LogFile Get, Error: " + ex.Message);
+                string msg = string.Format("LogFile GET, Error: {0}", ex.Message);
+                logger.WriteToLog(msg, Logger.LogMessageType.ERROR);
+                return new JsonResult(msg);
             }
         }
 
@@ -46,34 +37,41 @@ namespace movies_preview_api.Controllers
         {
             try
             {
-                myLogger.WriteToLog(logfile.Data, Utils.Logger.LogMessageType.PROCESS);
-                return "Message added to log file";
+                string? post_data = logfile.Data;
+
+                if (!string.IsNullOrEmpty(post_data)) 
+                {
+                    logger.WriteToLog(post_data, Logger.LogMessageType.PROCESS);
+                    return "Message added to log file";
+                }
+                else 
+                {
+                    return "Data is NULL, no update to log file performed";
+                }
             }
             catch (Exception ex)
             {
-                WriteToLogFile("LogFile Post, Error:" + ex.Message, Utils.Logger.LogMessageType.ERROR);
-                return "Failed to add message to log file";
+                string msg = string.Format("LogFile POST, Error: {0}", ex.Message);
+                logger.WriteToLog(msg, Logger.LogMessageType.ERROR);
+                return msg;
             }
         }
 
-        // DELETE api/<LogFileController>
+        // DELETE api/<LogFileController>/5
+        [HttpDelete]
         public JsonResult Delete()
         {
             try
             {
-                myLogger.DeleteLogFile();
+                logger.DeleteLogFile();
                 return new JsonResult("Log file deleted");
             }
             catch (Exception ex)
             {
-                WriteToLogFile("LogFile Delete, Error:" + ex.Message, Utils.Logger.LogMessageType.ERROR);
-                return new JsonResult("LogFile Delete, Error:" + ex.Message);
+                string msg = string.Format("LogFile DELETE, Error: {0}", ex.Message);
+                logger.WriteToLog(msg, Logger.LogMessageType.ERROR);
+                return new JsonResult(msg);
             }
-        }
-
-        private void WriteToLogFile(string msg, Utils.Logger.LogMessageType msgType)
-        {
-            myLogger.WriteToLog(msg, msgType);
         }
     }
 }

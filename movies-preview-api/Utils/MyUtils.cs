@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 using System.Runtime.Serialization.Json;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
@@ -8,6 +7,7 @@ namespace movies_preview_api.Utils
 {
     public static class MyUtils
     {
+        private static readonly Logger logger = new();
         private const string MOVIE_API_KEY = "4c3a1f537f8907422488da3c434f96b2";
 
         public enum PublicKeyType
@@ -19,16 +19,24 @@ namespace movies_preview_api.Utils
         {
             try
             {
-                XmlSerializer xmlSerializer = new XmlSerializer(toSerialize.GetType());
-
-                using (StringWriter textWriter = new StringWriter())
+                if (toSerialize?.GetType() is not null)
                 {
-                    xmlSerializer.Serialize(textWriter, toSerialize);
-                    return textWriter.ToString();
+                    XmlSerializer xmlSerializer = new(toSerialize.GetType());
+
+                    using (StringWriter textWriter = new())
+                    {
+                        xmlSerializer.Serialize(textWriter, toSerialize);
+                        return textWriter.ToString();
+                    }
+                }
+                else 
+                {
+                    return string.Empty;
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                logger.WriteToLog(string.Format("SerializeObject_XML, error: {0}", ex.Message), Logger.LogMessageType.ERROR);
                 return string.Empty;
             }
 
@@ -38,23 +46,31 @@ namespace movies_preview_api.Utils
         {
             try
             {
+                if (toSerialize?.GetType() is not null)
+                {
+                    DataContractJsonSerializer js = new(toSerialize.GetType());
+                    MemoryStream msObj = new MemoryStream();
+                    js.WriteObject(msObj, toSerialize);
+                    msObj.Position = 0;
+                    StreamReader sr = new(msObj);
 
-                DataContractJsonSerializer js = new DataContractJsonSerializer(toSerialize.GetType());
-                MemoryStream msObj = new MemoryStream();
-                js.WriteObject(msObj, toSerialize);
-                msObj.Position = 0;
-                StreamReader sr = new StreamReader(msObj);
+                    // "{\"Description\":\"Share Knowledge\",\"Name\":\"C-sharpcorner\"}"  
+                    string json = sr.ReadToEnd();
 
-                // "{\"Description\":\"Share Knowledge\",\"Name\":\"C-sharpcorner\"}"  
-                string json = sr.ReadToEnd();
+                    sr.Close();
+                    msObj.Close();
 
-                sr.Close();
-                msObj.Close();
+                    return json;
+                }
+                else 
+                {
+                    return string.Empty;
+                }
 
-                return json;
             }
-            catch
+            catch (Exception ex)
             {
+                logger.WriteToLog(string.Format("SerializeObject_JSON, error: {0}", ex.Message), Logger.LogMessageType.ERROR);
                 return string.Empty;
             }
 
@@ -85,17 +101,40 @@ namespace movies_preview_api.Utils
 
         public static string GetWorkingDirectory()
         {
-            string workingDirectory;
+            string? string_path = string.Empty;
 
-            if (Assembly.GetEntryAssembly().Location.IndexOf("bin\\") > 0)
+            try
             {
-                workingDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location.Substring(0, Assembly.GetEntryAssembly().Location.IndexOf("bin\\")));
+                string? entryAssemblyLocation = Assembly.GetEntryAssembly()?.Location;
+
+                if (!string.IsNullOrEmpty(entryAssemblyLocation))
+                {
+                    int binIndex = entryAssemblyLocation.IndexOf("bin", StringComparison.OrdinalIgnoreCase);
+
+                    if (binIndex > 0)
+                    {
+                        string_path = Path.GetDirectoryName(entryAssemblyLocation[..binIndex]);
+                    }
+                    else
+                    {
+                        string_path = Path.GetDirectoryName(entryAssemblyLocation);
+                    }
+                }
+
+                if (string.IsNullOrEmpty(string_path)) 
+                {
+                    return string.Empty;
+                }
+                else
+                {
+                    return string_path;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                workingDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                logger.WriteToLog(string.Format("GetWorkingDirectory, error: {0}", ex.Message), Logger.LogMessageType.ERROR);
+                return string.Empty;
             }
-            return workingDirectory;
         }
 
         public static string GetAPIKey(PublicKeyType key)

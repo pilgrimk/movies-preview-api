@@ -98,10 +98,10 @@ namespace movies_preview_api.Utils
 
         private void CreateEmptyFile(string filename)
         {
-            if (!Directory.Exists(Path.GetDirectoryName(filename)))
+            if ((!string.IsNullOrEmpty(filename)) && (!Directory.Exists(Path.GetDirectoryName(filename))))
             {
                 // create the directory
-                Directory.CreateDirectory(Path.GetDirectoryName(filename));
+                Directory.CreateDirectory(Path.GetDirectoryName(filename)!);
             }
 
             // create the file

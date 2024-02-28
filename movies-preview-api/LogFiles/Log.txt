@@ -1,17 +1,31 @@
-[2024-02-27T09:08:50] [Error]- Error Msg: HTTPMessageHandler.SetWebRequestHeaders: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2024-02-27&primary_release_date.lte=2024-05-27&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
-[2024-02-27T09:37:09] [Error]- Error Msg: HTTPMessageHandler.SetHttpClientHeaders: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects., Method: GET, URL: https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2024-02-27&primary_release_date.lte=2024-05-27&api_key=4c3a1f537f8907422488da3c434f96b2&page=1 Payload: 
-[2024-02-27T09:45:42] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T09:59:03] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:01:55] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:08:40] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:09:15] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:09:16] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:09:29] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:09:29] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:09:31] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:09:31] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:18:38] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:18:39] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
-[2024-02-27T10:30:33] [Process]- this is junk data
-[2024-02-27T10:30:43] [Process]- Retrieving log file data via Get request
-[2024-02-27T10:30:57] [Process]- Retrieving log file data via Get request
+[2024-02-27T14:43:24] [Process]- Retrieving log file data via Get request
+[2024-02-27T14:44:27] [Process]- Retrieving log file data via Get request
+[2024-02-27T14:44:29] [Process]- Retrieving log file data via Get request
+[2024-02-27T14:44:40] [Process]- This one is a long post to the log file!
+[2024-02-27T14:45:02] [Process]- Retrieving log file data via Get request
+[2024-02-27T15:14:00] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T15:22:00] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T15:22:29] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T15:22:53] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T15:23:18] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T15:25:55] [Process]- Retrieving log file data via Get request
+[2024-02-27T15:26:11] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T15:35:43] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T15:35:43] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T16:03:14] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T16:03:15] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T16:23:10] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T16:23:10] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:01:26] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:01:26] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:03:26] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:03:27] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:06:02] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:06:02] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:06:12] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:06:13] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:06:21] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:06:22] [Process]- GetUpcomingMovies, processed 3 of 77 total pages
+[2024-02-27T17:16:16] [Process]- GetUpcomingMovies, processed 3 of 78 total pages
+[2024-02-27T17:20:38] [Process]- GetUpcomingMovies, processed 3 of 78 total pages
+[2024-02-27T17:20:38] [Process]- GetUpcomingMovies, processed 3 of 78 total pages

@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using movies_preview_api.Utils;
-using System.Linq;
-using System.Threading.Tasks;
 using movies_preview_api.Models;
+using movies_preview_api.Utils;
 using Newtonsoft.Json.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -21,23 +17,9 @@ namespace movies_preview_api.Controllers
         private const string THE_MOVIEDB_BASE_URL = "https://api.themoviedb.org";
         private const string DISCOVER_MOVIES_BY_DATE_STRING = "/3/discover/movie?primary_release_date.gte={0}&primary_release_date.lte={1}&api_key={2}&page={3}";
 
-        private readonly Logger logger = new Logger();
+        private readonly Logger logger = new();
 
-        // GET: api/<MoviesController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<MoviesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // GET api/<MoviesController>/GetUpcomingMovies
+        // GET: api/<MoviesController>/GetUpcomingMovies
         [HttpGet("GetUpcomingMovies")]
         public List<UpcomingMovies> GetUpcomingMovies()
         {
@@ -48,16 +30,16 @@ namespace movies_preview_api.Controllers
         [HttpGet("GetUpcomingMovies/{lang}")]
         public List<UpcomingMovies> GetUpcomingMovies(string lang = "en")
         {
-            List<UpcomingMovies> response = new List<UpcomingMovies>();
-            List<UpcomingMovies> paged_response = new List<UpcomingMovies>();
-            
+            List<UpcomingMovies> response = [];
+            List<UpcomingMovies> paged_response = [];
+
             int page_number = 1;
             int total_pages = -1;
             string date_string = DateTime.Now.ToString("yyyy-MM-dd");
             string future_date_string = DateTime.Today.AddMonths(LOOK_AHEAD_MONTHS).ToString("yyyy-MM-dd");
             string pub_key = MyUtils.GetAPIKey(MyUtils.PublicKeyType.MOVIES);
             string url = THE_MOVIEDB_BASE_URL + string.Format(DISCOVER_MOVIES_BY_DATE_STRING, date_string, future_date_string, pub_key, page_number.ToString());
-            
+
             paged_response = GetMovies(url, lang, ref total_pages);
             if (paged_response.Count > 0)
             {
@@ -86,6 +68,8 @@ namespace movies_preview_api.Controllers
             return response;
         }
 
+
+        // PRIVATE functions -----------------------------------------------------------------------------
         private List<UpcomingMovies> GetMovies(string url, string filter, ref int total_pages)
         {
             HTTPMessageHandler handler = new HTTPMessageHandler();
@@ -108,13 +92,15 @@ namespace movies_preview_api.Controllers
 
         private int GetTotalPages(string JSON_string)
         {
-            try {
+            try
+            {
                 JObject obj_JSON = new JObject();
                 obj_JSON = JObject.Parse(JSON_string);
 
                 return obj_JSON.Value<int?>("total_pages") ?? 1;
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 logger.WriteToLog(string.Format("GetTotalPages, error: {0}", ex.Message), Logger.LogMessageType.ERROR);
                 return 1;
             }
@@ -138,5 +124,6 @@ namespace movies_preview_api.Controllers
 
             return response;
         }
+        // -----------------------------------------------------------------------------------------------
     }
 }
